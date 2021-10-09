@@ -33,7 +33,7 @@ This binary is meant to be run by user with 4242 uid, we can not bypass this che
     0x080485e3 <+87>:	call   0x8048360 <printf@plt>
     0x080485e8 <+92>:	leave 
 
-It seems to get some hardcoded string, apply on it ft_des function and output token with printf. So this binary does not have to be run on snowcrash system and since we have read permissions on this binary we can simply scp this binary on some other system where we do have root permissions, create user with uid=4242 and run this binary under created user, then we would get:
+It seems to get some hardcoded string, apply on it ft_des function and output token with printf. So this binary does not have to be run on snowcrash system and since we have read and execute permissions on this binary we can simply scp this binary on some other system where we do have root permissions, create user with uid=4242 and run this binary under created user, then we would get:
 
     ./level13 
     your token is 2A31L79asukciNyi8uppkEuSx

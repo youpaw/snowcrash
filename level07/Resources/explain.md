@@ -1,5 +1,5 @@
 # level07 solution
-Given setuid elf,  we can run it with ltrace to get the idea of what it does:
+Given setuid elf, we can run it with ltrace to get the idea of what it is doing:
 
     getegid()                                                  = 2007
     geteuid()                                                  = 2007

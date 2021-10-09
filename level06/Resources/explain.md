@@ -1,5 +1,5 @@
 # level06 solution
-Given setuid binary which calls php script with provided arguments. If we take a look at provided php script we will find that it was obusficated, but we can easily deobusficate it via online service and get:
+Given setuid binary which calls php script with provided arguments. If we take a look at provided php script we will find out that it was obusficated, but we can easily deobusficate it via online service and get:
 
     <?php
     function y($m) {
