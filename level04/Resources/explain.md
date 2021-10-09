@@ -16,7 +16,7 @@ We can check if it runs with netstat command:
     netstat -tuln
     tcp6       0      0 :::4242                 :::*                    LISTEN
 
-We can connect to it via curl and provide argument via get parameters:
+We can connect to it via curl and provide argument via GET parameters:
 
     curl localhost:4747?x=smth
     smth

@@ -8,7 +8,7 @@ Given setuid elf and token file with no permissions to read it. We can run setui
     exit(1 <unfinished ...>
     +++ exited (status 1) +++
 
-This binary checks for presence of word token in provided path. We can bypass this check by simply creating symlink to this file with name that does not contain 'token' word:
+This binary checks for presence of word 'token' in provided path. We can bypass this check by simply creating symlink to this file with name that does not contain 'token' word:
 
     cd /tmp
     ln -s /home/user/level08/token level08_flag

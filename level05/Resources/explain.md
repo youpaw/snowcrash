@@ -1,5 +1,5 @@
 # level05 solution
-On ogin to the level via ssh new mail message notification appears. This message contains:
+On login to the level via ssh new mail message notification appears. This message contains:
 
 	*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
 
@@ -15,7 +15,7 @@ This script runs through /opt/openarenaserver and executes every file which this
 	#!/bin/bash
 	/bin/getflag > /tmp/level05_token
 
-After a minute we check if our token file was created:
+After a minute we check if our token file had been created:
 	
 	cat /tmp/level05_token
 	Check flag.Here is your token : viuaaale9huek52boumoomioc

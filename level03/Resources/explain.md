@@ -11,7 +11,7 @@ We can run it with ltrace to get the idea of what it is doing:
     setresuid(2003, 2003, 2003, 0xb7e5ee55, 0xb7fed280) = 0
     system("/usr/bin/env echo Exploit me"Exploit me
 
-Ltrace is a tool which can display library calls of given binary. Provided setuid binary sets effective user and group (flag03) to be a real user of current proccess and then it creates new process by calling system function and runs echo with environment provided from /usr/bin/env. But echo command in this binary executes by searching the PATH environment variable. THis means that we can run any binary by providing our own PATH variable containing value of different directory. In this directory we can create symlink to getflag binary so setuid binary will run it under flag03 user.
+Ltrace is a tool which can display library calls of given binary. Provided setuid binary sets current effective user and group (flag03) to be a real user of current proccess and then it creates new process by calling system function and runs echo with environment provided from /usr/bin/env. But echo command in this binary executes by searching the PATH environment variable. This means that we can run any binary by providing our own PATH variable containing value of different directory. In this directory we can create symlink to getflag binary so setuid binary will run it under flag03 user.
 
     mkdir /tmp/level03
     cd /tmp/level03

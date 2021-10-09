@@ -18,7 +18,7 @@ Given setuid binary which calls php script with provided arguments. If we take a
     print $r;
     ?>
 
-This php script reads the content of provided file and replace some symbols with preg_replace. First preg_replace function entry in x function is matching any number of any symbols inside round brackets of expression '[x ()]' which is unsafe/ We can abuse that by running this script on file with content that match this pattern:
+This php script reads the content of provided file and replace some symbols with preg_replace. First preg_replace function entry in x function is matching any number of any symbols inside round brackets of expression '[x ()]' which is unsafe. We can abuse that by running this script on file with content that match this pattern:
 
     [x {${exec(getflag)}}]
 

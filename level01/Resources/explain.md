@@ -1,5 +1,5 @@
 # level01 solution
-There are no files in home directory and no files beloning to user flag01. But there are also not many places in linux which available to current user and where password could be stored. Check the most obvious /etc/passwd.
+There are no files in home directory and no files beloning to user flag01. But there are also not many places in linux which are available to current user and where password could be stored. Check the most obvious /etc/passwd.
 
     cat /etc/passwd | grep flag01
     flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
